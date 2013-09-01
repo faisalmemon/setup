@@ -5,17 +5,13 @@ configure both the machine and your individual development environment as
 follows:
 
 ```sh
-cd $HOME
-sudo apt-get install -y git-core
-git clone https://github.com/startup-class/setup.git
-./setup/setup.sh   
+curl https://raw.github.com/startup-class/setup/master/setup.sh | bash
+exit # and then reconnect; easy way to fully reset environment
 ```
 
-See also http://github.com/startup-class/dotfiles and
-[Startup Engineering Video Lectures 4a/4b](https://class.coursera.org/startup-001/lecture/index)
-for more details.
-
-
-
-
-
+Or alternatively if you want to adjust the setup scripts themselves:
+```sh
+cd $HOME
+sudo apt-get install -y git-core
+git clone git@github.com:faisalmemon/setup
+```
