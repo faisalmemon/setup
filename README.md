@@ -37,15 +37,19 @@ To get ssh github access working
 ================================
 
 1.  Create a keypair
-```ssh-keygen -t rsa```
+```sh
+ssh-keygen -t rsa
+```
 
 Supply the file path
-```/home/ubuntu/.ssh/github_rsa```
+```sh
+/home/ubuntu/.ssh/github_rsa
+```
 
 2.  Add the key to the ssh list of keys to try
-```
+```sh
 eval `ssh-agent -s`
 ssh-add /home/ubuntu/.ssh/github_rsa
 ```
 
-3.  Add the public key ```github_rsa.pub``` to the github user account page
+3.  Add the public key github_rsa.pub to the github user account page
