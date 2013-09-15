@@ -40,9 +40,8 @@ To get ssh github access working
 ```sh
 ssh-keygen -t rsa
 ```
-
 Supply the file path
-```sh
+```
 /home/ubuntu/.ssh/github_rsa
 ```
 
