@@ -31,3 +31,21 @@ Automatically pulled in by step (1).  Has faisalmemon customizations; in particu
 3.  Repo bitstarter.
 This is the actual website source code.  It has its own setup script to be run, as well as manual
 datafill for API entitlements.
+
+
+To get ssh github access working
+================================
+
+1.  Create a keypair
+```ssh-keygen -t rsa```
+
+Supply the file path
+```/home/ubuntu/.ssh/github_rsa```
+
+2.  Add the key to the ssh list of keys to try
+```
+eval `ssh-agent -s`
+ssh-add /home/ubuntu/.ssh/github_rsa
+```
+
+3.  Add the public key ```github_rsa.pub``` to the github user account page
