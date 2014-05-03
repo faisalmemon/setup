@@ -5,7 +5,7 @@ configure both the machine and your individual development environment as
 follows:
 
 ```sh
-curl https://raw.github.com/faisalmemon/setup/master/setup.sh | bash
+curl https://raw.githubusercontent.com/faisalmemon/setup/master/setup.sh | bash
 exit # and then reconnect; easy way to fully reset environment
 ```
 
